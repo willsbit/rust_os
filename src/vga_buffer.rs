@@ -3,7 +3,6 @@ use lazy_static::lazy_static;
 use spin::Mutex;
 use volatile::Volatile;
 #[allow(dead_code)]
-
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[repr(u8)]
 pub enum Color {
@@ -129,7 +128,6 @@ lazy_static! {
         buffer: unsafe { &mut *(0xb8000 as *mut Buffer) },
     });
 }
-
 
 /// Macros to print to the VGA buffer
 #[macro_export]
