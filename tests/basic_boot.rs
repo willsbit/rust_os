@@ -20,7 +20,7 @@ fn test_runner(tests: &[&dyn Fn()]) {
 
 #[panic_handler]
 fn panic(info: &PanicInfo) -> ! {
-    os::test_panic_handler(info)    
+    os::test_panic_handler(info)
 }
 
 #[test_case]
